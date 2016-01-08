@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+
+
+</head>
+<body id="myPage" >
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="/main">Rokodev_admin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/main">О себе</a></li>
+                <li><a href="/products">Мой код</a></li>
+                <!--                <li><a href="/reviews">Отзыви</a></li>-->
+                <li><a href="/contacts">Контакты</a></li>
+
+                <li><a href="https://vk.com/id107355505"><img src="https://www.awicons.com/free-icons/download/social-media-icons/flat-shadow-social-media-icons-by-lokas-software/ico/vkontakte.ico" width="20px" height="20px"/></a></li>
+                <li><a href="https://www.facebook.com/"><img src="https://www.awicons.com/free-icons/download/social-media-icons/flat-shadow-social-media-icons-by-lokas-software/ico/facebook.ico" height="20px" width="20px"/></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<?php if(isset($_SESSION['login'])){?>
+
+<div id="content" class="container text-center">
+    <?=$data['content']?>
+</div>
+
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+
+</footer>
+<?php } ?>
+</body>
+</html>
+
